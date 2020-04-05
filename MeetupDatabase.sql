@@ -21,7 +21,7 @@ DROP TABLE G2_City_T CASCADE CONSTRAINTS;
 DROP TABLE G2_Category_T CASCADE CONSTRAINTS;
 
 /* 
-category_t is the entity that captures the various categories 
+G2_Category_T is the entity that captures the various categories 
 that groups can be created. For example, Sports could be a category etc.
 */
 
@@ -33,7 +33,7 @@ CREATE TABLE G2_Category_T (
 );
 
 /* 
-city_t is the entity that captures the various cities in which 
+G2_City_T is the entity that captures the various cities in which 
 the onsite site operates
 */
 
@@ -50,7 +50,7 @@ CREATE TABLE G2_City_T (
 );
 
 /*
-venue_t is the entity that captures the venues in a particular city
+G2_Venue_T is the entity that captures the venues in a particular city
 where group events can be conducted
 */
 
@@ -66,7 +66,7 @@ CREATE TABLE G2_Venue_T (
 );
 
 /*
-member_t is the entity that captures the members registered in this site
+G2_Member_T is the entity that captures the members registered in this site
 */
 
 CREATE TABLE G2_Member_T (
@@ -82,7 +82,7 @@ CREATE TABLE G2_Member_T (
 );
 
 /*
-group_t is the entity that captures the groups that are created by members in a particular city and category
+G2_Group_T is the entity that captures the groups that are created by members in a particular city and category
 */
 
 CREATE TABLE G2_Group_T (
@@ -103,7 +103,7 @@ CREATE TABLE G2_Group_T (
 );
 
 /*
-interesttopic_t is the entity that captures all the possible interest topics that groups and members can have. 
+G2_InterestTopic_T is the entity that captures all the possible interest topics that groups and members can have. 
 For example. Photography could be an interest topic and could contain sub interest topics like landscape photography, 
 Night photography, Potrait photography etc.
 */
@@ -120,7 +120,7 @@ CREATE TABLE G2_InterestTopic_T (
 );
 
 /*
-event_t is the entity that captures all the events organized by groups in a particular venue in a city
+G2_Event_T is the entity that captures all the events organized by groups in a particular venue in a city
 */
 
 CREATE TABLE G2_Event_T (
@@ -139,7 +139,7 @@ CREATE TABLE G2_Event_T (
 );
 
 /*
-eventparticipation_t is the associative entity that captures the members who participated in an event
+G2_EventParticipation_T is the associative entity that captures the members who participated in an event
 */
 
 CREATE TABLE G2_EventParticipation_T (
@@ -153,7 +153,7 @@ CREATE TABLE G2_EventParticipation_T (
 );
 
 /*
-groupinteresttopic_t is the associative entity that captures the interest topics that the group is interested in
+G2_GroupInterestTopic_T is the associative entity that captures the interest topics that the group is interested in
 */
 
 CREATE TABLE G2_GroupInterestTopic_T (
@@ -165,7 +165,7 @@ CREATE TABLE G2_GroupInterestTopic_T (
 );
 
 /*
-memberinteresttopic_t is the associative entity that captures the interest topics that the member is interested in
+G2_MemberInterestTopic_T is the associative entity that captures the interest topics that the member is interested in
 */
 
 CREATE TABLE G2_MemberInterestTopic_T (
@@ -177,7 +177,7 @@ CREATE TABLE G2_MemberInterestTopic_T (
 );
 
 /*
-groupmember_t is the associative entity that groups in which the member belong to
+G2_GroupMember_T is the associative entity that groups in which the member belong to
 */
 
 CREATE TABLE G2_GroupMember_T (
